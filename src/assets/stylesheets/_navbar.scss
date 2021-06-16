@@ -1,0 +1,59 @@
+.navbar {
+  font-size: 17.50px;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 15px;
+  margin: 0 auto;
+  border-bottom: 4px solid #E3000F;
+  height: 4vh;
+  position: absolute;
+  background-color: white;
+  width: 100vw;
+  box-sizing: border-box;
+  height: 60px;
+  top: 0;
+}
+
+.navbar-logo {
+  height: 30px;
+  width: auto;
+  margin-bottom: -2px;
+  cursor: pointer;
+}
+
+.navbar-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  h5 {
+    font-family: 'Ubuntu';
+    font-weight: 400;
+  }
+}
+
+.language {
+  justify-self: end;
+  align-self: center;
+}
+
+@media (max-width: 1024px) {
+  .navbar { grid-template-columns: 2fr 5fr 2fr; }
+  h5 { font-size: 16px; }
+}
+
+@media (max-width: 767px) {
+  .navbar { grid-template-columns: 2fr 5fr 2fr; }
+
+  .navbar-logo { 
+    margin: 0 auto;
+    grid-column: 2;
+  }
+
+  .navbar-menu {
+    grid-column: 3;
+    align-items: flex-end;
+    justify-self: right;
+  }
+}

@@ -1,0 +1,116 @@
+.bnr-background {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../images/bnr-background-resized.png');
+  background-size: cover;
+  background-position-y: 60% ;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  padding: 70px;
+  width: 78vw;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  h1 {
+    color: white;
+    font-size: 45px;
+    font-weight: 300;
+  }
+  h4 {
+    color: white;
+    font-weight: 400;
+  }
+}
+
+.bnr-btns {
+  display: flex;
+  a { margin: 40px 20px 50px 20px; }
+}
+
+.rent-btn {
+  padding: 11px 40px 8px 40px;
+  border-radius: 7px;
+  background-color: #E3000F;
+  h3 { 
+    font-size: 21px;
+    color: white;
+    font-weight: 400;
+    margin-bottom: 0.3rem;
+  }
+}
+
+.buy-btn {
+  @extend .rent-btn;
+  background-color: white;
+  border: 1px solid #E3000F;
+  h3 { color: #E3000F; }
+}
+
+.flex-banner-footer {
+  display: flex;
+  justify-content: space-between;
+  h4 { margin-right: 0.5rem; }
+}
+
+.bnr-contact > h4 {
+  font-weight: 600;
+}
+
+@media (max-width: 1024px) {
+  .banner h1 { 
+    font-size: 35px;
+  }
+  
+  .rent-btn, .buy-btn {
+    padding: 9px 35px 6px 35px;
+    h3 { font-size: 18px; }
+  }
+
+  .flex-banner-footer h4 { font-size: 16px; }
+
+  .bnr-btns a { margin: 30px 15px 40px 15px; }
+}
+
+@media (max-width: 767px) {
+  .banner h1 { 
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .banner {
+    width: 100%;
+    padding: 30px 20px;
+    border-radius: 0;
+  }
+
+  .rent-btn, .buy-btn {
+    padding: 8px 30px 5px 30px;
+    h3 { font-size: 16px; }
+  }
+
+  .flex-banner-footer {
+    flex-direction: column;
+    align-items: center;
+    h4 { 
+      font-size: 15px;
+      text-align: center;
+    }
+  }
+
+  .bnr-btns a { margin: 20px 10px 30px 10px; }
+}
+
+@media (max-width: 576px) {
+  .banner h1 { font-size: 26px; }
+
+  .rent-btn, .buy-btn {
+    padding: 6px 25px 3px 25px;
+    h3 { font-size: 16px; }
+  }
+}

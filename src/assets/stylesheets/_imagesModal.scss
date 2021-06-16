@@ -1,0 +1,50 @@
+.bg-modal {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;  
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-image {
+  width: 1000px !important;
+  height: 400px !important;
+  background-size: contain !important;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.carousel button {
+  background-color: white; 
+  box-shadow: none;
+}
+
+button[tabindex='-1'] {
+  background-color: red;
+}
+
+.carousel-wrapper {
+  padding: 100px;
+  margin: 0 auto;
+}
+
+.rec-carousel button.rec-arrow, button.rec-arrow:active, button.rec-arrow:focus, button.rec-arrow:disabled {
+  background-color: rgba(0, 0, 0, 0.7) !important;
+  color: white;
+  cursor: pointer;
+}
+
+.rec-carousel button.rec-arrow:hover {
+  background-color: red !important;
+}
+
+.close-modal {
+  position: absolute;
+  right: 80px;
+  top: 80px;
+  cursor: pointer;
+}
